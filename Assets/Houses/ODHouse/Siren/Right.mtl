@@ -1,0 +1,15 @@
+# Wavefront Object Material File
+# Generated using SpeedTree tools
+
+newmtl Default_Mat
+map_Kd Default_Color.png
+map_bump Default_Normal.png
+bump Default_Normal.png -bm 1
+
+
+newmtl Right_Mat
+map_Kd Right_Color.png
+map_bump Right_Normal.png
+bump Right_Normal.png -bm 1
+
+
