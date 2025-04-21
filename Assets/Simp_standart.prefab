@@ -10108,6 +10108,7 @@ GameObject:
   - component: {fileID: 3961854824964061644}
   - component: {fileID: 1836829249939827175}
   - component: {fileID: 1554531900110258895}
+  - component: {fileID: -305595279887899478}
   m_Layer: 6
   m_Name: Simp_standart
   m_TagString: Simp
@@ -10155,10 +10156,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 10
+  m_Acceleration: 1e+14
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 1e+14
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -10204,6 +10205,22 @@ MonoBehaviour:
   wanderRadius: 10
   minWaitTime: 3
   maxWaitTime: 7
+--- !u!114 &-305595279887899478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8807879719672207403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 692c090fe76325640b1c41af70ccfbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moneyAmount: 5
+  interval: 5
+  manager: {fileID: 0}
+  isActive: 1
 --- !u!1 &8861338900440387838
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using System.Collections;
 public class Cosplayer : MonoBehaviour
 {
     [Header("Base Settings")]
-    [SerializeField] private int currentLevel = 1;
+    [SerializeField] public int currentLevel = 1;
     [SerializeField] private float evolutionRadius = 5f;
     [SerializeField] private float checkInterval = 3f;
     [SerializeField] private float summonChance = 0.3f;

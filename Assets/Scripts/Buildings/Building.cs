@@ -17,13 +17,13 @@ public class Building : MonoBehaviour
     [Header("Events")]
     public UnityEvent OnUnlocked;
 
-    private void Start()
+    public void Start()
     {
         UpdateVisualState();
         selectionIndicator.SetActive(false);
     }
 
-    public void TryUnlock()
+    public virtual void TryUnlock()
     {
         if (isUnlocked) return;
 

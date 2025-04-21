@@ -70,6 +70,7 @@ public class UnitSelectionManager : MonoBehaviour
     }
     private void HandleSelectionInput()
     {
+        
         // Начало выделения
         if (Input.GetMouseButtonDown(0))
         {

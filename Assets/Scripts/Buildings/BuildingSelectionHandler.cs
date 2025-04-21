@@ -17,6 +17,7 @@ public class BuildingSelectionHandler : MonoBehaviour
         {
             Debug.Log("A");
             selectionManager.DeselectAll();
+            selectionManager.DeselectBuildings();
             building.SetSelected(true);
             selectionManager.selectedBuildinds.Add(building);
             Debug.Log(building);
