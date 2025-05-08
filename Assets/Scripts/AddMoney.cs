@@ -9,20 +9,23 @@ public class AddMoney : MonoBehaviour
     [SerializeField] ResourceManager manager;
     [Header("State")]
     [SerializeField] private bool isActive = true;    // Включен ли генератор
-
+    [SerializeField] private int oneTime = 1000;
     private Coroutine moneyCoroutine;
 
     void Start()
     {
         manager = GameObject.Find("UnitLimitManager").GetComponent<ResourceManager>();
-        StartMoneyGeneration();
+        GiveStartMoney();
     }
 
     void OnDisable()
     {
         StopMoneyGeneration();
     }
-
+    public void GiveStartMoney()
+    {
+        manager.AddMoney(oneTime);
+    }
     public void StartMoneyGeneration()
     {
         if (moneyCoroutine == null)

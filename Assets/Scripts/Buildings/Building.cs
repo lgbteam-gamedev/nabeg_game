@@ -17,6 +17,11 @@ public class Building : MonoBehaviour
     [Header("Events")]
     public UnityEvent OnUnlocked;
 
+    [Header("»деологическое вли€ние")]
+    public float sovyonokEffect;
+    public float ussrEffect;
+    public float eternalSummerEffect;
+
     public void Start()
     {
         UpdateVisualState();
@@ -43,8 +48,14 @@ public class Building : MonoBehaviour
         unlockedModel.SetActive(isUnlocked);
     }
 
-    public void SetSelected(bool selected)
+    public virtual void SetSelected(bool selected)
     {
         selectionIndicator.SetActive(selected);
+    }
+    public bool IsColliding()
+    {
+        Collider[] colliders = Physics.OverlapBox(transform.position,
+                                                GetComponent<Collider>().bounds.extents);
+        return colliders.Length > 2; // 1 - собственный коллайдер
     }
 }
